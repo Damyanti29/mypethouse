@@ -1,6 +1,6 @@
 .hero {
   background: #f9f6ff;
-  padding: 120px 20px;
+  padding: 60px 20px 120px ;
   overflow: hidden;
   font-family: sans-serif;
 }
@@ -18,13 +18,14 @@
   flex: 1;
   text-align: center;
   z-index: 2;
+  margin-top: -40px;
 }
 
 .hero-content h1 {
   font-size: 42px;
   font-weight: 700;
   line-height: 1.2;
-  margin-bottom: 20px;
+  margin-bottom: 60px;
   color: #222;
 }
 

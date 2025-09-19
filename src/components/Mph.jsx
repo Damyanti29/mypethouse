@@ -64,7 +64,7 @@ export default function Mph() {
       </div>
       <span className="paw paw1">🐾</span>
       <span className="paw paw2">🐾</span>
-     <span className="dot dot1"></span>
+       <span className="dot dot1"></span>
        <span className="dot dot2"></span>
        <span className="dot dot3"></span>
     </section>
