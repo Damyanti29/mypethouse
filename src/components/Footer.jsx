@@ -71,7 +71,7 @@ export default function Footer() {
       </div>
 
       <div className="footer-bottom">
-       mypethouse © Copyrights | All rights reserved by p&<i class="fa fa-window-maximize" aria-hidden="true"></i>
+       mypethouse © Copyrights | All rights reserved by Damayanti,Bhumika,Tanvi with love.
       </div>
     </footer>
   );

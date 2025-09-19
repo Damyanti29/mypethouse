@@ -4,14 +4,11 @@ import { Link } from "react-router-dom";
 
 function Navbar() {
   const [scrolled, setScrolled] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 50) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
+      setScrolled(window.scrollY > 50);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -21,16 +18,25 @@ function Navbar() {
   return (
     <nav className={`navbar ${scrolled ? "scrolled" : ""}`}>
       <div className="logo">MyPetHouse</div>
-      <ul className="nav-menu">
-         <li><Link to="/">Home</Link></li>
-        <li><Link to="/services">Boarding</Link></li>
-        <li><a href="#shop">Shop</a></li>
-        <li><a href="#blogs">Blogs</a></li>
-        <li><a href="#pages">Pages</a></li>
-      </ul>
-      <div className="cart-btn">
-        🛒 2 Item
+
+      {/* Hamburger button (visible only on mobile via CSS) */}
+      <div
+        className="hamburger"
+        onClick={() => setMenuOpen((prev) => !prev)}
+      >
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
+
+      {/* Nav Menu — toggle 'active' when menuOpen is true */}
+      <ul className={`nav-menu ${menuOpen ? "active" : ""}`}>
+        <li><Link to="/" onClick={() => setMenuOpen(false)}>Home</Link></li>
+        <li><Link to="/services" onClick={() => setMenuOpen(false)}>Services</Link></li>
+        <li><Link to="/reviews" onClick={() => setMenuOpen(false)}>Reviews</Link></li>
+        <li><Link to="/packages" onClick={() => setMenuOpen(false)}>Packages</Link></li>
+        <li><Link to="/contact" onClick={() => setMenuOpen(false)}>Contact</Link></li>
+      </ul>
     </nav>
   );
 }

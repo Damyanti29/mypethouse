@@ -47,7 +47,7 @@ export default function Mph() {
         {/* Center - Text */}
         <div className="hero-content">
           <h1>
-            The World's Best Team <br /> for Pet Care Services
+            The World's Best Team  for Pet Care Services
           </h1>
           <p>
             Consequat nisl vel pretium lectus quam id leo in. Quis viverra nibh cras

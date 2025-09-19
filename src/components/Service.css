@@ -1,0 +1,119 @@
+.services {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: #fff;
+  position: relative;
+}
+
+.services-subtitle {
+  color: #7c3aed;
+  font-weight: 600;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+
+.services-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 2rem;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  justify-content: center;
+}
+
+.service-card {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.4s ease;
+  position: relative;
+  text-align: left;
+  overflow: hidden;
+}
+
+.service-icon {
+  width: 50px;
+  margin-bottom: 1rem;
+  transition: filter 0.3s ease;
+}
+
+.service-card h3,
+.service-card p,
+.service-card .price,
+.service-card .service-link {
+  transition: color 0.3s ease;
+}
+
+.service-card h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+  color: #222;
+}
+
+.service-card p {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.price {
+  font-weight: 600;
+  color: #7c3aed;
+  margin-bottom: 0.8rem;
+}
+
+.service-link {
+  display: inline-block;
+  color: #7c3aed;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.service-link:hover {
+  text-decoration: underline;
+}
+
+/* 🟣 Hover effect: background purple + text white */
+.service-card:hover {
+  background: #7c3aed;
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(124, 58, 237, 0.3);
+}
+
+/* Change text & price color on hover */
+.service-card:hover h3,
+.service-card:hover p,
+.service-card:hover .price,
+.service-card:hover .service-link {
+  color: #fff;
+}
+
+/* Icon turns white using filter */
+.service-card:hover .service-icon {
+  filter: brightness(0) invert(1);
+}
+
+/* 🐾 Decorative paws on hover */
+.service-card::after {
+  content: "🐾 🐾 🐾 🐾";
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  font-size: 2.5rem;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.service-card:hover::after {
+  opacity: 0.15;
+}

@@ -1,0 +1,134 @@
+.contact-section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.contact-subtitle {
+  color: #7d3cff;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.contact-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.contact-text {
+  color: #444;
+  margin-bottom: 40px;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-bottom: 60px;
+}
+
+.contact-card {
+  background: #fff;
+  border: 1px solid #eee;
+  padding: 25px;
+  border-radius: 12px;
+  text-align: center;
+  transition: 0.3s ease;
+}
+
+.contact-card:hover {
+  background: #7d3cff;
+  color: #fff;
+  transform: translateY(-8px);
+}
+
+.contact-icon {
+  font-size: 2rem;
+  background: #f3e8ff;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 15px;
+}
+
+/* Founder Section */
+.founder-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 30px;
+  margin-top: 40px;
+  padding: 40px;
+  background: #faf5ff;
+  border-radius: 15px;
+  text-align: left;
+}
+
+.founder-img {
+  font-size: 4rem;
+  flex: 0 0 100px;
+  text-align: center;
+}
+
+.founder-info h3 {
+  color: #7d3cff;
+  margin-bottom: 8px;
+}
+
+.founder-info h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #222;
+}
+
+/* Founder Section */
+.founder-section {
+  background-color: #f8f6ff; /* light lavender to match theme */
+  padding: 60px 20px;
+  margin-top: 40px;
+}
+
+.founder-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.founder-photo img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 6px solid #a855f7; /* purple border */
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s ease-in-out;
+}
+
+.founder-photo img:hover {
+  transform: scale(1.08); /* zoom hover effect */
+}
+
+.founder-info h2 {
+  font-size: 28px;
+  color: #6b21a8; /* deep purple */
+  margin-bottom: 10px;
+}
+
+.founder-info h3 {
+  font-size: 22px;
+  color: #000;
+  margin-bottom: 15px;
+}
+
+.founder-info p {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+  max-width: 500px;
+}
