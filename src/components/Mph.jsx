@@ -1,66 +1,29 @@
-import React from "react";
-import "./Mph.css";
-import { FaShieldAlt, FaTags, FaHeadset, FaCheckCircle } from "react-icons/fa";
+import React from 'react';
+import './Mph.css';
 
-export default function Mph() {
+const Mph = () => {
   return (
-    <section className="hero">
-      {/* decorative dots */}
-      <span className="dot dot-1" />
-      <span className="dot dot-2" />
-      <span className="dot dot-3" />
-
-      <div className="hero-inner">
-        <div className="hero-left">
-          <p className="eyebrow">WE CARE FOR YOUR PETS</p>
-         
-
-          <p className="hero-desc">
-             We Help You Care for Animals with Nutrition. We are committed to providing the best nutrition and care for your beloved pets.
-          </p>
-
-          <div className="features">
-            <div className="feature">
-              <div className="icon-wrap"><FaShieldAlt /></div>
-              <div>
-                <h4>Trust &amp; Safety</h4>
-                <p>Velit euismod pellentes</p>
-              </div>
-            </div>
-
-            <div className="feature">
-              <div className="icon-wrap"><FaTags /></div>
-              <div>
-                <h4>Discounts</h4>
-                <p>Bibendum ut tristique</p>
-              </div>
-            </div>
-
-            <div className="feature">
-              <div className="icon-wrap"><FaHeadset /></div>
-              <div>
-                <h4>Support</h4>
-                <p>Egestas quis ipsum velit</p>
-              </div>
-            </div>
-
-            <div className="feature">
-              <div className="icon-wrap"><FaCheckCircle /></div>
-              <div>
-                <h4>Guarantee</h4>
-                <p>Velit euismod pellentes</p>
-              </div>
-            </div>
-          </div>
+    <div className="hero-section">
+      <div className="hero-content">
+        <h1 className="hero-title">The World's Best Team <br /> for Pet Care Services</h1>
+        <p className="hero-description">
+          Consequat nisl vel pretium lectus quam id leo in. Quis viverra nibh cras pulvinar
+          mattis. Quis hendrerit dolor magna eget est lorem ipsum dolor.
+        </p>
+        <button className="hero-button">
+          <i className="fa fa-paw"></i> Our Service
+        </button>
+      </div>
+      <div className="hero-images">
+        <div className="pet-image dog">
+          <img src="/dog1.jpg" alt="Dog" />
         </div>
-
-        <div className="hero-right">
-          {/* yellow wavy background */}
-          <div className="shape" />
-          {/* your dog image - put file as public/dogs.png */}
-          <img src="/dog.png" alt="dogs" className="dogs-img" />
+        <div className="pet-image cat">
+          <img src="/dog2.jpg" alt="Cat" />
         </div>
       </div>
-    </section>
+    </div>
   );
-}
+};
+
+export default Mph;
