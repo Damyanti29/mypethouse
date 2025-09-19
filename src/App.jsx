@@ -1,5 +1,6 @@
 
 import './App.css'
+import Footer from './components/Footer'
 import Mph from './components/Mph'
 import Navbar from './components/Navbar'
 import Stats from './components/Stats'
@@ -13,6 +14,7 @@ function App() {
         <Navbar/>
         <Mph />
         <Stats/>
+        <Footer/>
       </div>
     </>
   )
