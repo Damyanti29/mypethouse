@@ -29,8 +29,8 @@ const Contact = () => {
         <div className="contact-card">
           <div className="contact-icon">📍</div>
           <h3>Address</h3>
-          <p>17 Parkman Place, 2122</p>
-          <p>United States</p>
+          <p>Sec 4 ,Near BR Road</p>
+          <p>Vashi ,Navi Mumbai</p>
         </div>
 
         <div className="contact-card">
