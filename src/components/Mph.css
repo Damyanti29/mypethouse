@@ -1,106 +1,148 @@
-.hero-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 80px 20px;
-    background-color: #f8f7f2; /* Light background color */
-    position: relative;
-    overflow: hidden;
+.hero {
+  background: #f9f6ff;
+  padding: 120px 20px;
+  overflow: hidden;
+  font-family: sans-serif;
+}
+
+.hero-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
 }
 
 .hero-content {
-    text-align: center;
-    max-width: 600px;
-    margin-right: 50px;
-    z-index: 1;
+  flex: 1;
+  text-align: center;
+  z-index: 2;
 }
 
-.hero-title {
-    font-size: 3.5rem;
-    font-weight: bold;
-    color: #333;
-    line-height: 1.2;
-    margin-bottom: 20px;
+.hero-content h1 {
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  color: #222;
 }
 
-.hero-description {
-    font-size: 1.2rem;
-    color: #666;
-    margin-bottom: 30px;
+.hero-content p {
+  color: #555;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 30px;
 }
 
-.hero-button {
-    background-color: #8a2be2; /* Purple color */
-    color: white;
-    padding: 15px 30px;
-    border: none;
-    border-radius: 50px;
-    font-size: 1.1rem;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
+.hero-btn {
+  background: #7c3aed;
+  color: #fff;
+  padding: 14px 32px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.hero-btn:hover {
+  background: #6d28d9;
 }
 
-.hero-button i {
-    margin-right: 10px;
+/* Left & Right Pets */
+.pet {
+  position: relative;
+  width: 280px;
+  flex-shrink: 0;
 }
 
-.hero-images {
-    display: flex;
-    position: relative;
-    width: 600px;
+.pet img {
+  width: 100%;
+  position: relative;
+  z-index: 2;
+  transform: translateY(-40px); /* raise upward */
 }
 
-.pet-image {
-    position: absolute;
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    overflow: hidden;
+.pet .circle {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  z-index: 1;
+  opacity: 0.15;
 }
 
-.pet-image.dog {
-    top: 50px;
-    left: 0;
-    transform: translate(-50%, -50%);
-    background-color: #ff69b4; /* Pink circle */
+.pink {
+  background: #ff3aa7;
 }
 
-.pet-image.cat {
-    top: 50px;
-    right: 0;
-    transform: translate(50%, -50%);
-    background-color: #ffeb3b; /* Yellow circle */
+.yellow {
+  background: #ffc300;
 }
 
-.pet-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+/* Responsive */
+@media (max-width: 900px) {
+  .hero-wrapper {
+    flex-direction: column;
+    gap: 50px;
+  }
+  .pet {
+    width: 220px;
+  }
+  .pet img {
+    transform: translateY(-20px);
+  }
+  .hero-content h1 {
+    font-size: 30px;
+  }
+}
+/* Decorative paws */
+.paw {
+  position: absolute;
+  font-size: 35px;
+  opacity: 0.3;
+  z-index: 0;
 }
 
-/* Optional: Add decorative elements */
-.hero-section::before,
-.hero-section::after {
-    content: '';
-    position: absolute;
-    background-color: #d1c4e9; /* Light purple for dots */
-    border-radius: 50%;
-    width: 15px;
-    height: 15px;
+.paw1 {
+  top: 15%;
+  left: 12%;
+  transform: rotate(-20deg);
 }
 
-.hero-section::before {
-    top: 20%;
-    left: 10%;
+.paw2 {
+  top: 15%;
+  right: 15%;
+  transform: rotate(15deg);
 }
 
-.hero-section::after {
-    bottom: 20%;
-    right: 15%;
+/* Decorative dots */
+.dot {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  opacity: 0.4;
+  z-index: 0;
 }
 
-/* Add paw prints or other small graphics */
-/* You'll need to create SVGs or image files for these */
+.dot1 {
+  top: 30%;
+  left: 25%;
+  background: #facc15; /* yellow */
+}
+
+.dot2 {
+  top: 40%;
+  right: 20%;
+  background: #ec4899; /* pink */
+}
+
+.dot3 {
+  bottom: 25%;
+  left: 40%;
+  background: #7c3aed; /* purple */
+}
