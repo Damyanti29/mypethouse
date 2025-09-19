@@ -1,52 +1,78 @@
-import React from 'react'
+import React from "react";
+import "./Footer.css";
 
-const Footer = () => {
+export default function Footer() {
   return (
-    <div>
-<footer class="footer">
-  <div class="footer-container">
+    <footer className="footer">
+      <div className="footer-container">
+        {/* Left: Logo & Contact */}
+        <div className="footer-section">
+          <div className="footer-logo">
+            <span className="logo-icon">🌙</span>
+            <h2 className="logo-text">MyPetHouse</h2>
+          </div>
+          <p className="footer-desc">
+            PetCare - Grooming - Boarding
+          </p>
+          <div className="footer-contact">
+            <span className="phone-icon">📞</span>
+            <div>
+              <p className="phone-number">+91 7738991954</p>
+              <p className="phone-subtext">Got Questions? Call us 24/7</p>
+            </div>
+          </div>
+        </div>
 
-   
-    <div class="footer-section about">
-      <h2>🐶 MyPetHouse</h2>
-      <p>Your trusted companion for pet care, products, and services.</p>
-    </div>
+        {/* Working Hours */}
+        <div className="footer-section">
+          <h3 className="footer-title">Working Hours</h3>
+          <div className="working-box">
+            <div className="working-row">
+              <span>Mon - Fri:</span>
+              <span className="bold">7am - 6pm</span>
+            </div>
+            <div className="working-row">
+              <span>Saturday:</span>
+              <span className="bold">9am - 4pm</span>
+            </div>
+            <div className="working-row">
+              <span>Sunday:</span>
+              <span className="closed">Closed</span>
+            </div>
+          </div>
+        </div>
 
-   
-    <div class="footer-section links">
-      <h3>Quick Links</h3>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Shop</a></li>
-        <li><a href="#">Blogs</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </div>
+        {/* Useful Links */}
+        <div className="footer-section">
+          <h3 className="footer-title">Useful Links</h3>
+          <div className="links-grid">
+            <a href="#">Home</a>
+            <a href="#">FAQ</a>
+            <a href="#">About</a>
+            <a href="#">Gallery</a>
+            <a href="#">Services</a>
+            <a href="#">Delivery</a>
+            <a href="#">Shop</a>
+            <a href="#">Sales</a>
+          </div>
+        </div>
 
-   
-    <div class="footer-section contact">
-      <h3>Contact Us</h3>
-      <p>Email: support@mypethouse.com</p>
-      <p>Phone: +91 98765 43210</p>
-      <p>Address: Hyderabad, India</p>
-      <div class="social-icons">
-        <a href="#"><i class="fab fa-facebook-f"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        {/* Newsletter */}
+        <div className="footer-section">
+          <h3 className="footer-title">Newsletter</h3>
+          <p className="newsletter-text">
+            Be first in the queue! Get our latest news straight to your inbox.
+          </p>
+          <div className="newsletter-box">
+            <input type="email" placeholder="Email" />
+            <button>→</button>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
 
-  <div class="footer-bottom">
-    <p>© 2025 MyPetHouse. All rights reserved.</p>
-  </div>
-</footer>
-
-
-    </div>
-  )
+      <div className="footer-bottom">
+       mypethouse © Copyrights | All rights reserved by p&w
+      </div>
+    </footer>
+  );
 }
-
-export default Footer

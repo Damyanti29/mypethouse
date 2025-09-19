@@ -13,7 +13,7 @@ function App() {
       <div>
         <Navbar/>
         <Mph />
-        <Stats/>
+       
         <Footer/>
       </div>
     </>
