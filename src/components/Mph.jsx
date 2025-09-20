@@ -50,8 +50,7 @@ export default function Mph() {
             The World's Best Team  for Pet Care Services
           </h1>
           <p>
-            Consequat nisl vel pretium lectus quam id leo in. Quis viverra nibh cras
-            pulvinar mattis. Quis hendrerit dolor magna eget est lorem ipsum dolor
+            Experience the best for your furry friends at our pet grooming and boarding center! From refreshing baths and stylish haircuts to safe, cozy boarding and playful daycare, we’ve got every service your pet needs to look and feel their best. Visit us and check out our full range of grooming, boarding, and special care services—personalized for your pet’s comfort and happiness
           </p>
           <button className="hero-btn">🐾 Our Service</button>
         </div>
