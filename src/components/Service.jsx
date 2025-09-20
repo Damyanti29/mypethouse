@@ -17,7 +17,7 @@ export default function Service() {
             eget dolor morbi
           </p>
           <p className="price">From Rs.250 / hour</p>
-          <a href="//api.whatsapp.com/send?phone=919969208849&text=Hii damayanti here  today" className="service-link">
+          <a href="//api.whatsapp.com/send?phone=919969208849&text=Hii damayanti here ,Want to explore pet grooming prices and package" className="service-link">
             Get Service →
           </a>
         </div>
@@ -31,7 +31,7 @@ export default function Service() {
             pellentesque nec nam
           </p>
           <p className="price">From Rs.500 / complex</p>
-          <a href="//api.whatsapp.com/send?phone=919969208849&text=Hii damayanti here  today" className="service-link">
+          <a href="//api.whatsapp.com/send?phone=919969208849&text=Hii damayanti here,want to board my pet" className="service-link">
             Get Service →
           </a>
         </div>
