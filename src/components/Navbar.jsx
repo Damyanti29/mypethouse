@@ -40,11 +40,13 @@ function Navbar() {
   <Link to="/mypets" onClick={() => setMenuOpen(false)}>My Pets</Link>
 </li>
         <li><Link to="/facts" onClick={() => setMenuOpen(false)}>Facts</Link></li>
+        {/* Removed the My Pets <li> */}
       </ul>
       
+      {/* Only one My Pets button */}
       <div className="mypets-btn">
-  <Link to="/mypets" onClick={() => setMenuOpen(false)}>🐾 My Pets</Link>
-</div>
+        <Link to="/mypets" onClick={() => setMenuOpen(false)}>🐾 My Pets</Link>
+      </div>
 
     </nav>
   );
