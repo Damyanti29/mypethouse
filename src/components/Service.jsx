@@ -1,7 +1,9 @@
 import React from "react";
 import "./Service.css";
+import { useNavigate } from "react-router-dom";
 
 export default function Service() {
+  const navigate=useNavigate();
   return (
     <section className="services">
       <p className="services-subtitle">OUR SERVICES</p>
@@ -16,9 +18,15 @@ export default function Service() {
             Safe overnight care for pets when owners are away.
           </p>
           <p className="price">From Rs.250 / hour</p>
-          <a href="//api.whatsapp.com/send?phone=919969208849&text=Hii damayanti here ,Want to explore pet grooming prices and package" className="service-link">
+          {/* <a href="//api.whatsapp.com/send?phone=919969208849&text=Hii damayanti here ,Want to explore pet grooming prices and package" className="service-link">
             Get Service →
-          </a>
+          </a> */}
+           <button
+      className="service-link"
+      onClick={() => navigate("/appointment")}
+    >
+      Get Service →
+    </button>
         </div>
 
         {/* Card 2 */}

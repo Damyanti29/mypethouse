@@ -12,6 +12,7 @@ import Review from './components/Review'
 import Contact from './Contact'
 import Gallery from './components/Gallery'
 import Fact from './Fact'
+import Appoint from './components/Appoint'
 function App() {
 
 
@@ -37,6 +38,7 @@ function App() {
             <Route path="/packages" element={<Package />} />
             <Route path="/contact" element={<Contact />} />
              <Route path="/facts" element={<Fact/>} />
+              <Route path="/appointment" element={<Appoint />} />
           </Routes>
         </main>
 

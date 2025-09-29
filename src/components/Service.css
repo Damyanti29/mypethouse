@@ -117,3 +117,7 @@
 .service-card:hover::after {
   opacity: 0.15;
 }
+.service-link{
+  background: none;
+  border: none;
+}
