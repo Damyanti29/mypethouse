@@ -1,0 +1,28 @@
+.fact-container {
+    background: #f8f9fa;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    padding: 24px;
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+.fact-title {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #2d3a4b;
+    margin-bottom: 12px;
+}
+
+.fact-content {
+    font-size: 1.1rem;
+    color: #4a5568;
+    line-height: 1.6;
+}
+
+.fact-icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 12px;
+    vertical-align: middle;
+}

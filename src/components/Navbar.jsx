@@ -39,6 +39,7 @@ function Navbar() {
         <li>
   <Link to="/mypets" onClick={() => setMenuOpen(false)}>My Pets</Link>
 </li>
+        <li><Link to="/facts" onClick={() => setMenuOpen(false)}>Facts</Link></li>
       </ul>
       
       <div className="mypets-btn">
