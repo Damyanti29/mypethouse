@@ -1,5 +1,6 @@
 import React from "react";
 import "./Mph.css";
+import { Link } from "react-router-dom";
 
 export default function Mph() {
   return (
@@ -52,7 +53,9 @@ export default function Mph() {
           <p>
             Experience the best for your furry friends at our pet grooming and boarding center! From refreshing baths and stylish haircuts to safe, cozy boarding and playful daycare, we’ve got every service your pet needs to look and feel their best. Visit us and check out our full range of grooming, boarding, and special care services—personalized for your pet’s comfort and happiness
           </p>
-          <button className="hero-btn">🐾 Our Service</button>
+          <button className="hero-btn">🐾 Our
+            <li><Link to="/services" onClick={() => setMenuOpen(false)}>Services</Link></li>
+          </button>
         </div>
 
         {/* Right - Cat */}

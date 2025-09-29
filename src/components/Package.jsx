@@ -22,7 +22,7 @@ export default function Package() {
       <div className="pricing-grid">
         {/* Card 1 */}
         <div className="pricing-card">
-          <h3>Simple</h3>
+          <h3>Basic</h3>
           <div className="price-tag">Rs1300 – 1800</div>
           <ul className="features">
             <li>✔ Bath (Hypo-Allergenic)</li>
@@ -50,7 +50,7 @@ export default function Package() {
           <button className="purchase-btn">Book Now</button>
         </div>
          <div className="pricing-card">
-          <h3>Premium</h3>
+          <h3>Basic+Advanced</h3>
           <div className="price-tag">Rs2500 – 3000</div>
           <ul className="features">
             <li>✔ Bath (Hypo-Allergenic)</li>

@@ -1,7 +1,7 @@
 .hero {
   position: relative; /* anchor for paws/dots */
   background: #f9f6ff;
-  padding: 5vh 5% 10vh;
+  padding: 10vh 5% 10vh;
   overflow: hidden;
   font-family: sans-serif;
   min-height: 100vh;
