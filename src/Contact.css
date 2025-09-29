@@ -87,7 +87,7 @@
 /* Founder Section */
 .founder-section {
   background-color: #f8f6ff; /* light lavender to match theme */
-  padding: 60px 20px;
+  padding: 40px 20px;
   margin-top: 40px;
 }
 
@@ -98,11 +98,12 @@
   gap: 40px;
   max-width: 1000px;
   margin: auto;
+  flex-wrap: wrap; /* makes it responsive */
 }
 
 .founder-photo img {
-  width: 250px;
-  height: 250px;
+  width: 200px;  /* made smaller */
+  height: 200px;
   object-fit: cover;
   border-radius: 50%;
   border: 6px solid #a855f7; /* purple border */
@@ -112,6 +113,10 @@
 
 .founder-photo img:hover {
   transform: scale(1.08); /* zoom hover effect */
+}
+
+.founder-info {
+  flex: 1;
 }
 
 .founder-info h2 {
@@ -132,3 +137,21 @@
   line-height: 1.6;
   max-width: 500px;
 }
+
+/* Responsive (mobile view) */
+@media (max-width: 768px) {
+  .founder-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .founder-photo img {
+    width: 180px;
+    height: 180px;
+  }
+
+  .founder-info {
+    margin-top: 20px;
+  }
+}
+

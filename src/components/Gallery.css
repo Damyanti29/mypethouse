@@ -1,0 +1,58 @@
+.gallery-section {
+  text-align: center;
+  padding: 60px 20px;
+  overflow: hidden;
+}
+
+.gallery-subtitle {
+  color: #7d3cff;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.gallery-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: #222;
+}
+
+.gallery-slider {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.gallery-track {
+  display: flex;
+  gap: 20px;
+  animation: scrollGallery 25s linear infinite;
+}
+
+.gallery-card {
+  flex: 0 0 200px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+
+.gallery-card:hover {
+  transform: scale(1.05);
+}
+
+.gallery-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+/* Animation */
+@keyframes scrollGallery {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

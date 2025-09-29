@@ -10,6 +10,7 @@ import Service from './components/Service'
 import Package from './components/Package'
 import Review from './components/Review'
 import Contact from './Contact'
+import Gallery from './components/Gallery'
 function App() {
 
 
@@ -25,6 +26,7 @@ function App() {
             <Service />
             <Package />
             <Review />
+            <Gallery />
             <Contact/>
             </>
           } />

@@ -36,7 +36,15 @@ function Navbar() {
         <li><Link to="/reviews" onClick={() => setMenuOpen(false)}>Reviews</Link></li>
         <li><Link to="/packages" onClick={() => setMenuOpen(false)}>Packages</Link></li>
         <li><Link to="/contact" onClick={() => setMenuOpen(false)}>Contact</Link></li>
+        <li>
+  <Link to="/mypets" onClick={() => setMenuOpen(false)}>My Pets</Link>
+</li>
       </ul>
+      
+      <div className="mypets-btn">
+  <Link to="/mypets" onClick={() => setMenuOpen(false)}>🐾 My Pets</Link>
+</div>
+
     </nav>
   );
 }
